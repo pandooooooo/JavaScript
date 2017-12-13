@@ -1,0 +1,67 @@
+概念
+1、js使用
+	*<script type="text/script"> 
+	 ...
+	 ...
+	 </script>
+	*<script src="xxx.js">
+	 </script>
+	 
+	 xxx.js
+2、注释
+	*单行 //
+	*多行 /*...*/
+3、变量
+	*var 变量名
+	*字母、_、$ 开始
+4、函数
+	function xxx()
+	{
+	}
+
+互动
+1、输出内容
+	*document.write("内容"+变量名+“HTML标签”);
+2、消息对话框
+	*alert("xxx") ——直接输出 xxx
+	*alert(xxx) ——输出xxx变量的值
+3、确认消息对话框
+	*confirm(str);
+	*确定按钮= true
+	 取消按钮= false
+	*var x=confirm("你是女的吗");
+	 if(x==true)
+	 {...}
+4、提问消息对话框
+	*prompt(str1, str2);
+		> str1: 要显示在消息对话框中的文本，不可修改
+		> str2：文本框中的内容，可以修改
+	*确定按钮，文本框中的内容将作为函数返回值
+	 点击取消按钮，将返回null
+	*var x=prompt("what's ur name");
+	 if(x!=null)
+	 {...}
+5、打开新窗口
+	*window.open('url','窗口名字（有特殊意义的名称）','参数字符串')
+6、关闭窗口
+	*window.close();
+	*<窗口对象>.close();
+	 
+DOM操作
+1、获取元素
+	*document.getElementById("ID");
+2、获取元素内容
+	*object.innerHTML
+	*object.value
+	
+	*innerHtml是<div>标签内的文本,输入输出到该DOM内部纯HTML代码(流);
+	(获得td、div等html元素时候,它们是没有value或是text属性,只能用innerHtml)
+	*value是表单元素特有的属性,输入输出的是转义文本(字符串);
+	(Button、CheckBox、Radio)随表单一起发送的值;
+	(Reset、Submit)标签;
+	(Text、Hidden)默认值;
+	(File、Password)
+3、object.style.property
+4、object.style.display=none | block;
+5、object.className=classname;
+	*改变classname以指定样式
