@@ -1,0 +1,66 @@
+*循环
+	> for  循环代码块一定的次数
+	  for (语句1; 语句2; 语句3)
+	  { }
+	  
+	  语句均可省略；
+	  语句2 省略时注意使用break，否则会崩溃。
+	> for/in  循环遍历对象的属性
+	  var person={fname:"John",lname:"Doe",age:25};
+	  for (x in person)  //x 为属性名
+	  { 
+		txt=txt+person[x];
+	  }
+	> while	  do/while
+	  while (条件)
+	  { }
+	  先检测后执行
+	  
+	  do
+	  {  }
+	  while (条件)；
+	  先执行后检测，即使条件为false，也至少执行一次。
+*switch语句
+	> switch(n)
+	{
+		case1:
+			执行代码块1
+			break;
+		case2:
+			执行代码块2
+			break;
+		default:
+			与case1和case2不同时执行的代码
+	}
+	首先设置表达式 n（通常是一个变量）。随后表达式的值会与结构中的每个 case 的值做比较。
+	如果存在匹配，则与该 case 关联的代码块会被执行。
+*break&continue
+	> break 语句可用于跳出循环。
+	> continue 语句跳出循环后，会继续执行该循环之后的代码（如果有的话）。
+	
+*array
+	> 数组对象用来在单独的变量名中存储一系列的值。
+	> 创建数组对象
+	  var myArray=new Array();
+	> length(只有这一个属性)
+	  length表示的是数组所占内存空间的数目，而不仅仅是数组中元素的个数
+	> 二维数组选取
+	  myArray[0][0];
+	> !!!!!!
+	  注意读取二维数组的一行后，存成的数组成为一维数组！
+	  
+*sort()
+	> arrayObject.sort(sortby)
+	> 行列从0开始计数
+*reverse()
+	> 颠倒元素中数组顺序
+*createElement()
+	> 创建元素节点
+	> document.createElement("xxx");
+	> 要与appendChild() 或 insertBefore()方法联合使用，将元素显示在页面中。
+*createTextNode()
+	> 创建新的文本节点
+	> document.createTextNode(data);
+	
+*创建示例：
+
